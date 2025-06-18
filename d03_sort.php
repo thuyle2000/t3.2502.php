@@ -14,6 +14,7 @@ foreach ($numbers as $num) {
 }
 echo "\n";
 
+
 //demo sort array with string values
 $names = ["John", "Alice", "Bob", "Charlie"];
 echo "\n Original names: ";
@@ -25,4 +26,5 @@ echo "\n Sorted names: ";
 foreach ($names as $name) {
     echo "$name ";
 }
+
 
