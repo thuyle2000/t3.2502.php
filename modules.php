@@ -88,6 +88,10 @@ class ModuleDao {
             throw new \Exception("Error preparing statement: " . mysqli_error($conn));
         }
         mysqli_stmt_bind_param($stmt, "siii", $module->name, $module->hours, $module->fee, $module->id);
+
+
+
+        // Thực thi câu lệnh
         $result = mysqli_stmt_execute($stmt);
         if (!$result) {
             throw new \Exception("Error executing statement: " . mysqli_stmt_error($stmt));
